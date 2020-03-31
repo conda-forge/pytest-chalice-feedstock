@@ -13,10 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - chalice = pytest_chalice.plugin:main_entry_point
 
 requirements:
   host:
@@ -30,6 +28,8 @@ requirements:
 test:
   imports:
     - pytest_chalice
+  commands:
+    - chalice --help
 
 about:
   home: "https://github.com/studio3104/pytest-chalice"
