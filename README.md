@@ -5,11 +5,13 @@ Home: https://github.com/studio3104/pytest-chalice
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-chalice-feedstock/blob/master/LICENSE.txt)
 
 Summary: A set of py.test fixtures for AWS Chalice
 
+Development: https://github.com/studio3104/pytest-chalice
 
+Documentation: https://pypi.org/project/pytest-chalice/#description
 
 Current build status
 ====================
@@ -38,6 +40,7 @@ Installing `pytest-chalice` from the `conda-forge` channel can be achieved by ad
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `pytest-chalice` can be installed with:
@@ -108,9 +111,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -118,5 +121,6 @@ Feedstock Maintainers
 
 * [@benhuff](https://github.com/benhuff/)
 * [@mwilson8](https://github.com/mwilson8/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 
